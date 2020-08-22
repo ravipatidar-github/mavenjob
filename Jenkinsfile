@@ -40,7 +40,7 @@ pipeline{
                     nexusArtifactUploader artifacts: [
                         [artifactId: 'maven-simple',
                          classifier: '',
-                         file: 'target/Simple Maven example-0.2-SNAPSHOT.jar',
+                         file: 'target/maven-simple-0.2-SNAPSHOT.jar',
                          type: 'jar'
                          ]
                 ],
