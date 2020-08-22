@@ -1,14 +1,16 @@
 pipeline{
     stages{
         stage('SCM-Checkout'){
-            checkout([$class: 'GitSCM',
+            steps {
+                checkout([$class: 'GitSCM',
             branches: [[name: '*/master']],
             doGenerateSubmoduleConfigurations: false,
             extensions: [], 
             submoduleCfg: [], 
             userRemoteConfigs: [[credentialsId: '40523a17-9ca4-4acb-9417-46612ffcbfa6',
             url: 'https://github.com/ravipatidar-github/mavenjob.git']]])
-        }
+               }
+        }         
         stage('--package--') {
                 steps {
                     bat "mvn package"
