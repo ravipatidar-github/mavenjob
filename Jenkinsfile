@@ -8,7 +8,6 @@ pipeline{
             submoduleCfg: [], 
             userRemoteConfigs: [[credentialsId: '40523a17-9ca4-4acb-9417-46612ffcbfa6',
             url: 'https://github.com/ravipatidar-github/mavenjob.git']]])
-            def workspace=pwd()
         }
         stage('--package--') {
                 steps {
@@ -47,7 +46,7 @@ pipeline{
                          nexusUrl: 'localhost:8081/',
                          nexusVersion: 'nexus3',
                          protocol: 'http',
-                         repository: 'http://localhost:8081/repository/Demo_Repo/',
+                         repository: 'Demo_Repo',
                          version: '0.2-SNAPSHOT'
                 }
 
