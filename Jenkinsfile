@@ -49,7 +49,7 @@ pipeline{
                          nexusUrl: 'localhost:8081/',
                          nexusVersion: 'nexus3',
                          protocol: 'http',
-                         repository: 'Demo_Repo',
+                         repository: 'Demo-Snap',
                          version: '0.2-SNAPSHOT'
                 }
 
