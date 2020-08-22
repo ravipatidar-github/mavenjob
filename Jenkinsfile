@@ -24,11 +24,11 @@ pipeline{
                     script {
                         def scannerHome = tool 'SONAR_RUNNER_HOME';
 
-                        withSonarQubeEnv(credentialsId: 'Pipeline_Demo') {
-                            bat "${tool("SONAR_RUNNER_HOME")}/bin/sonar-scanner \
-                      -Dsonar.projectKey=Pipeline_Demo \
-                      -Dsonar.sources=. \      
-                      -Dsonar.host.url=http://localhost:9000 \
+                          withSonarQubeEnv(credentialsId: 'Pipeline_Demo') {
+                        bat "${tool("SONAR_RUNNER_HOME")}/bin/sonar-scanner \
+                  -Dsonar.projectKey=Pipeline_Demo \
+                  -Dsonar.sources=. \
+                  -Dsonar.host.url=http://localhost:9000 \
                       -Dsonar.login=37f3f0393c507b5148b2b4a4b241872acc3de7b9"
                         }
                     }
