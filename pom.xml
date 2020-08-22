@@ -42,6 +42,9 @@
  
     </plugins>
   </build>
+  <properties>
+        <sonar.sources>src/main/java,src/main/webapp</sonar.sources>
+      </properties>
  <distributionManagement>
         <repository>
             <id>deployment</id>
