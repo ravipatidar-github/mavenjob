@@ -42,19 +42,6 @@
  
     </plugins>
   </build>
-  <properties>
-        <sonar.sources>src/main/java/com/github/jitpack,src/test/java/com/github/jitpack</sonar.sources>
-      </properties>
- <distributionManagement>
-        <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/Demo-Repo/</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/Demo-Snap/</url>
-        </snapshotRepository>
-    </distributionManagement>
+
+ 
 </project>
